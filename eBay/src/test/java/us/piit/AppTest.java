@@ -20,7 +20,7 @@ public class AppTest extends CommonAPI {
         home.secondTest();
     }
 
-    @Test
+    //@Test
     public void test3() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.thirdTest();
@@ -36,5 +36,12 @@ public class AppTest extends CommonAPI {
     public void test5() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.fifthTest();
+    }
+
+    //@Test
+    public void test6() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.sixthTest();
+
     }
 }
