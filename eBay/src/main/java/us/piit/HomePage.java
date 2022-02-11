@@ -121,6 +121,16 @@ public class HomePage extends CommonAPI {
         waitFor(2);
     }
 
+    public void sixthTest(){
+        compInfo.click();
+        String ci = driver.getCurrentUrl();
+        System.out.println(ci);
+        Assert.assertEquals(ci, "https://www.ebayinc.com/company/");
+        stories.click();
+        driver.getCurrentUrl();
+        System.out.println(driver.getCurrentUrl());
+    }
+
 
 }
 
