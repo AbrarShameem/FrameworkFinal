@@ -36,7 +36,7 @@
                 <version>2.22.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>/Users/abrarshameem/IdeaProjects/web-automation-framework/eBay/src/test/resources/Runner.xml</suiteXmlFile>
+                        <suiteXmlFile>/Users/abrarshameem/IdeaProjects/FrameworkFinal/eBay/src/test/resources/Runner.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>

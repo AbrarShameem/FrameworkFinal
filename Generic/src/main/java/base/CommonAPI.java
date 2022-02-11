@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     String path = System.getProperty("user.home");
 
     @Parameters({"os","browserName","url"})
@@ -30,9 +30,9 @@ public class CommonAPI {
     public WebDriver getDriver(String os, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver", path+"/IdeaProjects/web-automation-framework/Generic/src/drivers/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", path+"/IdeaProjects/FrameworkFinal/Generic/src/drivers/chromedriver.exe");
             }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.chrome.driver", path+"/IdeaProjects/web-automation-framework/Generic/src/drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver", path+"/IdeaProjects/FrameworkFinal/Generic/src/drivers/chromedriver");
             }
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){

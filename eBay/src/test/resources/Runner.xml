@@ -8,7 +8,7 @@
 
     <test name="eBay test">
         <classes>
-            <!--<class name="us.piit.AppTest"></class>-->
+            <class name="us.piit.AppTest"></class>
             <!--<class name="us.piit.search.SearchSingleElement"></class>-->
             <!--<class name="us.piit.search.SearchMultipleItems"></class>-->
         </classes>
