@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation" parallel="false">
+    <parameter name="os" value="mac"></parameter>
+    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="url" value="https://www.walmart.com/"></parameter>
+
+    <test name="Walmart test">
+        <classes>
+            <class name="us.piit.AppTest"></class>
+
+        </classes>
+    </test>
+</suite>

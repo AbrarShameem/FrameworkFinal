@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public WebDriver driver;
+    public static WebDriver driver;
     String path = System.getProperty("user.home");
 
     @Parameters({"os","browserName","url"})
