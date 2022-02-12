@@ -11,7 +11,13 @@ public class AppTest extends CommonAPI{
     @Test
     public void test1(){
         HomePage home = PageFactory.initElements(driver, HomePage.class);
-        home.firstTest();
+        //home.first(Test);
+        home.enterEmail();
+        waitFor(6);
+        home.password();
+        waitFor(7);
+        home.login();
+        waitFor(7);
     }
 
 }
