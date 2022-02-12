@@ -11,10 +11,10 @@ import java.util.List;
 public class HomePage extends CommonAPI {
 
 
-    @FindBy(xpath = "//*[@id= '//a[contains(text(),'Sign In')]']")
+    @FindBy(xpath = "//a[contains(text(),'Sign In')]")
     WebElement signInButton;
 
-    @FindBy(xpath = "//*[@id= 'id_userLoginId']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[3]/div[1]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]")
     WebElement signInEmail;
 
     @FindBy(xpath = "//input[@id='id_password']")
@@ -42,10 +42,14 @@ public class HomePage extends CommonAPI {
         click(signInButton);
     }
 
-    public void enterEmail() {
-        typeAndEnter("mta1864@yahoo.com");
-
+    public void signInNow () {
+        type(signInEmail, "mta1864@yahoo.com");
+        type(signInPw,"ilovejesus1864netflix0168");
+        click(signIn2);
+        System.out.println("signed in");
     }
+
+   // public void
 
 }
 

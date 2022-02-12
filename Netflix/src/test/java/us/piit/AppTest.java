@@ -1,6 +1,7 @@
 package us.piit;
 
 import base.CommonAPI;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -16,7 +17,11 @@ public class AppTest extends CommonAPI{
     }
 
     @Test
-    public void
+    public void userSignsIn() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.signInNow();
+        waitFor(3);
+
 
 
 
