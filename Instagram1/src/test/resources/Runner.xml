@@ -8,8 +8,7 @@
 
     <test name="instagram test">
         <classes>
-            <class name="us.piit.AppTest"></class>
-
+                <class name ="us.piit.AppTest"<>/class>
         </classes>
-    </test>
+        </test>
 </suite>
