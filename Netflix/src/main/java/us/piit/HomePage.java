@@ -38,6 +38,12 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//*[@id= 'KWGWPYYG7NENVH6DHKS6VDEXEI']")
     WebElement mommyPage;
 
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/span[1]"
+            WebElement carrotHover;
+
+    @FindBy(xpath =//a[contains(text(),'Sign out of Netflix')]// )
+            WebElement signOutButton;
+
     public void clickOnSignInButton () {
         click(signInButton);
     }
@@ -49,7 +55,34 @@ public class HomePage extends CommonAPI {
         System.out.println("signed in");
     }
 
-   // public void
+    public void tsukiSignIn () {
+        click(tsukiPage);
+        waitFor(3);
+    }
+
+    public void leoSignIn () {
+        click(leoPage);
+    }
+
+    public void michaelSignIn() {
+        click(michaelPage);
+    }
+
+    public void mommySignIn() {
+        click(mommyPage);
+    }
+
+    public void daddySignIn() {
+        click(daddyPage);
+    }
+
+    public void signOut(){
+        hoverOver(web driver , web element);
+        click(signOutButton);
+
+    }
+
+
 
 }
 
