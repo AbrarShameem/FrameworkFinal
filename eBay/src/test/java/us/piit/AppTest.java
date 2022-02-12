@@ -42,6 +42,29 @@ public class AppTest extends CommonAPI {
     public void test6() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.sixthTest();
+    }
 
+    //@Test
+    public void test7() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.seventhTest();
+    }
+
+    //@Test
+    public void test8() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.eighthTest();
+    }
+
+    //@Test
+    public void test9() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.ninthTest();
+    }
+
+    @Test
+    public void test10() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.tenthTest();
     }
 }

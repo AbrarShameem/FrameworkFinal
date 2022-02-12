@@ -2,6 +2,8 @@ package us.piit;
 
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
@@ -51,6 +53,54 @@ public class HomePage extends CommonAPI {
 
     @FindBy (xpath = "//body[1]/header[1]/div[1]/div[1]/div[2]/div[2]/nav[1]/ul[1]/li[3]/a[1]")
     WebElement stories;
+
+    @FindBy (xpath = "//body[1]/div[5]/div[2]/label[1]/span[1]/input[1]")
+    WebElement checkbox;
+
+    @FindBy (xpath = "//body[1]/div[6]/footer[1]/div[3]/table[1]/tbody[1]/tr[1]/td[1]/ul[1]/li[5]/a[1]")
+    WebElement sellerCenter;
+
+    @FindBy (xpath = "//body[1]/div[4]/div[1]/nav[1]/span[1]")
+    WebElement sidePanel;
+
+    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[7]/a[1]")
+    WebElement startSelling;
+
+    @FindBy (xpath = "//body/div[@id='mainContent']/div[1]/ul[1]/li[10]/a[1]")
+    WebElement businessIndustrial;
+
+    @FindBy (xpath = "//span[contains(text(),'Agriculture & Forestry Equipment')]")
+    WebElement agriForest;
+
+    @FindBy (xpath = "//a[contains(text(),'See all in Agriculture and Forestry Equipment')]")
+    WebElement seeAllagriForest;
+
+    @FindBy (xpath = "//span[contains(text(),'Agriculture & Forestry Equipment')]")
+    WebElement agriText;
+
+    @FindBy (xpath = "//body/div[@id='mainContent']/div[1]/ul[1]/li[12]/a[1]")
+    WebElement eBayRefurbished;
+
+    @FindBy (xpath = "//body/div[@id='mainContent']/div[1]/ul[1]/li[12]/div[2]/div[1]/nav[2]/ul[1]/li[1]/a[1]")
+    WebElement vacuums;
+
+    @FindBy (xpath = "//a[contains(text(),'Household Supplies & Cleaning')]")
+    WebElement houseSupplies;
+
+    @FindBy (xpath = "//body[1]/header[1]/div[1]/ul[2]/li[1]/a[1]")
+    WebElement sell;
+
+    @FindBy (xpath = "//body/div[2]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[1]/button[1]")
+    WebElement theBasics;
+
+    @FindBy (xpath = "//body/div[2]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[2]/button[1]")
+    WebElement businessSelling;
+
+    @FindBy (xpath = "//body/div[2]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[3]/button[1]")
+    WebElement tips;
+
+    @FindBy (xpath = "//body/div[2]/div[1]/div[1]/div[1]/h1[1]")
+    WebElement sellText;
 
     public void firstTest() {
         dropDownLeft.click();
@@ -131,6 +181,43 @@ public class HomePage extends CommonAPI {
         System.out.println(driver.getCurrentUrl());
     }
 
+    public void seventhTest(){
+        searchField.sendKeys("basmati rice");
+        searchBtn.click();
+        checkbox.click();
+        String cUrl = driver.getCurrentUrl();
+        Assert.assertEquals(cUrl, "https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=basmati+rice&_sacat=0");
+        System.out.println(cUrl);
+    }
+
+    public void eighthTest(){
+          businessIndustrial.click();
+          agriForest.click();
+          seeAllagriForest.click();
+          String agriWords = getText(agriText);
+          System.out.println(agriWords);
+          Assert.assertEquals(agriWords, "Agriculture & Forestry Equipment");
+    }
+
+    public void ninthTest(){
+        hoverOver(driver, eBayRefurbished);
+        vacuums.click();
+        houseSupplies.click();
+        String house = driver.getCurrentUrl();
+        System.out.println(house);
+        Assert.assertEquals(house, "https://www.ebay.com/b/Household-Cleaning-Supplies/299/bn_1857080");
+        System.out.println("Test Passed!!!");
+    }
+
+    public void tenthTest(){
+        sell.click();
+        theBasics.click();
+        businessSelling.click();
+        tips.click();
+        String sellTextUrl = driver.getCurrentUrl();
+        System.out.println(sellTextUrl);
+        Assert.assertEquals(sellTextUrl, "https://www.ebay.com/sl/sell");
+    }
 
 }
 
