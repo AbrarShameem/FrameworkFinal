@@ -16,11 +16,12 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
 
-    public static WebDriver driver;
+    public  static WebDriver driver;
+    String path=System.getProperty("user.home");
 
     @Parameters({"os","browserName","url"})
     @BeforeMethod
-    public void setUp(@Optional("windows") String os, @Optional("chrome")  String browserName, @Optional("https://wwww.google.com") String url){
+    public void setUp(@Optional("windows") String os, @Optional("chrome")  String browserName, @Optional("https://www.google.com") String url){
         getDriver(os, browserName);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
@@ -29,9 +30,9 @@ public class CommonAPI {
     public WebDriver getDriver(String os, String browserName){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/src/drivers/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver",path+"\\IdeaProjects\\FrameworkFinal\\Generic\\src\\drivers\\chromedriver.exe");
             }else if(os.equalsIgnoreCase("mac")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/src/drivers/chromedriver");
+                System.setProperty("webdriver.chrome.driver",path+"/IdeaProjects/FrameworkFinal/Generic/src/drivers/chromedriver");
             }
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("firefox")){
