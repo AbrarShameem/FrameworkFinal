@@ -62,7 +62,7 @@ public class AppTest extends CommonAPI {
         home.ninthTest();
     }
 
-    @Test
+    //@Test
     public void test10() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.tenthTest();
