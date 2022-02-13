@@ -8,7 +8,7 @@ public class AppTest extends CommonAPI {
 
     HomePage home = new HomePage();
 
-    //@Test
+    @Test
     public void test1() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.firstTest();
