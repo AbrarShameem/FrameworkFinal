@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class AppTest extends CommonAPI {
 
-    HomePage home = new HomePage();
+    HomePage homePage = new HomePage(driver);
 
     @Test
     public void test1() {
