@@ -8,7 +8,8 @@
 
     <test name="Walmart test">
         <classes>
-            <class name="us.piit.Test"></class>
+
+            <class name="us.piit.AppTest"></class>
 
         </classes>
     </test>
