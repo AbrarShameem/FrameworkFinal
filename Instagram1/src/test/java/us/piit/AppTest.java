@@ -8,16 +8,32 @@ import us.piit.HomePage;
 public class AppTest extends CommonAPI{
     HomePage home = new HomePage();
 
-    @Test
-    public void test1(){
+    //@Test
+    public void test01(){
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         //home.first(Test);
-        home.enterEmail();
-        waitFor(6);
-        home.password();
-        waitFor(7);
         home.login();
-        waitFor(7);
+        waitFor(10);
     }
 
-}
+
+
+   //@Test
+    public void test02(){
+         HomePage home = PageFactory.initElements(driver, HomePage.class);
+         home.Wrongusername();
+          //home.first(Test);
+         // home.enterWrongEmail();
+       waitFor(5);
+
+    }
+    @Test
+    public void test03(){
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.Wrongpassword();
+        //home.first(Test);
+        // home.enterWrongEmail();
+        waitFor(5);
+    }
+
+    }

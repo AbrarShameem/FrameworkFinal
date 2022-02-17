@@ -6,9 +6,9 @@ import org.testng.annotations.Test;
 
 public class AppTest extends CommonAPI {
 
-    HomePage home = new HomePage();
+    HomePage homePage = new HomePage(driver);
 
-    //@Test
+    @Test
     public void test1() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.firstTest();
@@ -62,7 +62,7 @@ public class AppTest extends CommonAPI {
         home.ninthTest();
     }
 
-    @Test
+    //@Test
     public void test10() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.tenthTest();
