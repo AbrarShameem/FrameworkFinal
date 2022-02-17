@@ -20,31 +20,31 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//input[@id='id_password']")
     WebElement signInPw;
 
-    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[3]/div[1]/div[1]/div[1]/form[1]/div[2]']")
+    @FindBy(xpath = "//button[contains(text(),'Sign In')]")
     WebElement signIn2;
 
-    @FindBy(xpath = "//*[@id= 'JL7EODNFFZHCZNGYPNGOLLKSWU']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[5]/div[1]/a[1]/div[1]/div[1]")
     WebElement tsukiPage;
 
-    @FindBy(xpath = "//*[@id= '3Y3HN6DX7VAOXKAUP4DLKRMIIM']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[4]/div[1]/a[1]/div[1]/div[1]")
     WebElement leoPage;
 
-    @FindBy(xpath = "//*[@id= 'UMSBLOSNY5DEFEYXSWZII3D3IY']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[1]/div[1]/a[1]/div[1]/div[1]")
     WebElement michaelPage;
 
-    @FindBy(xpath = "//*[@id= '44DFBS5UMFDDVMK2Q7VRPXBFAA']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[2]/div[1]/a[1]/div[1]/div[1]")
     WebElement daddyPage;
 
-    @FindBy(xpath = "//*[@id= 'KWGWPYYG7NENVH6DHKS6VDEXEI']")
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/ul[1]/li[3]/div[1]/a[1]/div[1]/div[1]")
     WebElement mommyPage;
 
-    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/span[1]"
+    @FindBy(xpath = "//body/div[@id='appMountPoint']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/span[1]")
             WebElement carrotHover;
 
-    @FindBy(xpath =//a[contains(text(),'Sign out of Netflix')]// )
+    @FindBy(xpath = "//a[contains(text(),'Sign out of Netflix')]")
             WebElement signOutButton;
 
-    public void clickOnSignInButton () {
+    public void clickOnSignInButton() {
         click(signInButton);
     }
 
@@ -55,36 +55,42 @@ public class HomePage extends CommonAPI {
         System.out.println("signed in");
     }
 
-    public void tsukiSignIn () {
+    public void tsukiClick () {
         click(tsukiPage);
         waitFor(3);
     }
 
-    public void leoSignIn () {
+    public void tsukiPage () {
+        type(signInEmail, "mta1864@yahoo.com");
+        type(signInPw, "ilovejesus1864netflix0168");
+        click(signIn2);
+        System.out.println("signed in");
+        click(tsukiPage);
+    }
+
+    public void leoClick () {
         click(leoPage);
     }
 
-    public void michaelSignIn() {
+    public void michaelClick() {
         click(michaelPage);
     }
 
-    public void mommySignIn() {
+    public void mommyClick() {
         click(mommyPage);
     }
 
-    public void daddySignIn() {
+    public void daddyClick() {
         click(daddyPage);
     }
 
-    public void signOut(){
-        hoverOver(web driver , web element);
-        click(signOutButton);
+
 
     }
 
 
 
-}
+
 
 
 
