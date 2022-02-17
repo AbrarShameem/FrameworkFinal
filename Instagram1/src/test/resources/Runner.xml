@@ -9,7 +9,7 @@
     <test name="instagram test">
         <classes>
 
-                <class name ="us.piit.AppTest">
+                <class name ="us.piit.TestSearchSingleItem">
 
                 </class>
 

@@ -92,6 +92,7 @@ public class CommonAPI {
             select.selectByValue(option);
         }
     }
+
     public List<WebElement> getDropdownOptions(WebElement element){
         Select select = new Select(element);
         List<WebElement> list = select.getOptions();
