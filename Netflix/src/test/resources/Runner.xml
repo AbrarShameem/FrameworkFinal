@@ -8,8 +8,7 @@
 
     <test name="Netflix test">
         <classes>
-            <class name="us.piit.AppTest"></class>
-
+            <class name="us.piit.TestLogin"></class>
         </classes>
     </test>
 </suite>
