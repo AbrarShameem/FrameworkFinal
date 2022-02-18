@@ -3,13 +3,13 @@
 
 <suite name="Amazon Automation" parallel="false">
     <parameter name="os" value="mac"></parameter>
-    <parameter name="browserName" value="chrome"></parameter>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://www.instagram.com/"></parameter>
 
     <test name="instagram test">
         <classes>
 
-                <class name ="us.piit.TestSearchSingleItem">
+            <class name ="us.piit.AppTest"></class>
 
                 </class>
 
