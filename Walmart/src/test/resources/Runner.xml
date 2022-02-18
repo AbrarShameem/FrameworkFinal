@@ -4,11 +4,14 @@
 <suite name="Walmart Automation" parallel="false">
     <parameter name="os" value="mac"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
-    <parameter name="url" value="https://www.walmart.com/"></parameter>
+    <parameter name="url" value="https://www.alibaba.com/"></parameter>
 
-    <test name="Walmart test">
+    <test name="Alibaba test">
         <classes>
-            <class name="us.piit.Test"></class>
+
+            <class name="us.piit.AppTest"></class>
+            <class name="us.piit.SearchItemTest"></class>
+            <class name="us.piit.SigninPageTest"></class>
 
         </classes>
     </test>

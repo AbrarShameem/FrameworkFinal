@@ -8,7 +8,7 @@
 
     <test name="eBay test">
         <classes>
-            <class name="us.piit.Test"></class>
+            <class name="us.piit.TestMotorsDropdownOptions"></class>
         </classes>
     </test>
 </suite>

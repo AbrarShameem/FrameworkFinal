@@ -11,6 +11,8 @@
 
             <class name ="us.piit.AppTest"></class>
 
+                </class>
+
         </classes>
         </test>
 </suite>
