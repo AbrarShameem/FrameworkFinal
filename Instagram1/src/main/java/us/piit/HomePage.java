@@ -12,13 +12,22 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 public class HomePage extends CommonAPI {
+    public HomePage(WebDriver driver) {
+        super.driver = driver;
+        PageFactory.initElements(driver, this);
+    }
 
 
     @FindBy(xpath = "//div[contains(text(),'Log In')]")
     WebElement login;
-
-    @FindBy (xpath ="//button[contains(text(),'Not now')]")
+    @FindBy(xpath = "//body[1]/div[1]/section[1]/main[1]/div[1]/div[1]/div[1]/div[1]/button[1]")
     WebElement notnow;
+
+    @FindBy(xpath = "//a[contains(text(),'Edit Profile')]")
+    WebElement editprofile;
+
+    @FindBy(xpath = "//body[1]/div[1]")
+    WebElement InstagramLogo;
 
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/main[1]/article[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/input[1]")
     WebElement email;
@@ -47,8 +56,27 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//header/section[1]/ul[1]/li[3]/a[1]/div[1]")
     WebElement following;
 
-    @FindBy(xpath = "//span[contains(text(),'Search')]")
+    @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[2]/input[1]")
     WebElement Search;
+
+    @FindBy(xpath = "//div[contains(text(),'Switch Accounts')]")
+    WebElement SwitchAccounts;
+
+    @FindBy(xpath = "//div[contains(text(),'Log Out')]")
+    WebElement LogOut;
+
+    @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[3]/div[1]/button[1]/div[1]/*[1]")
+    WebElement AddPost;
+
+    @FindBy(xpath = "//button[contains(text(),'Select from computer')]")
+    WebElement SelectFromComputar;
+
+    @FindBy(xpath = "//a[contains(text(),'Change Password')]")
+    WebElement Changepassword;
+
+    @FindBy(xpath = "//body[1]/div[1]/section[1]/main[1]/div[1]/article[1]/form[1]/div[1]/aside[1]/label[1]")
+    WebElement Name;
+
 
     public void onFollowing() {
         click(following);
@@ -58,12 +86,6 @@ public class HomePage extends CommonAPI {
         click(saved);
     }
 
-    //public void Test01(){
-
-    //username.sendKeys("sellingsunset007");
-    //password.sendKeys("Sunset1234");
-    //login.click();
-    //waitFor(3);
     public void login() {
         type(email, "tubaf64096@gmail.com");
         type(password, "Sunset123");
@@ -83,32 +105,65 @@ public class HomePage extends CommonAPI {
     }
 
     public void onSearch() {
-        type(Search, "angelinajolie");
+        type(Search, "tarnima99");
         waitFor(3);
         Search.sendKeys(Keys.ARROW_DOWN);
         Search.sendKeys(Keys.ENTER);
     }
 
 
-    public void profilemain(){
+    public void profilemain() {
         click(Profile);
     }
-    public void secondProfile(){
+
+    public void secondProfile() {
         click(onProfile);
     }
-    public void onSettings(){
+
+    public void onSettings() {
         click(settings);
     }
-    public void onPolygon(){
+
+    public void onPolygon() {
         click(polygon);
     }
-    public void onSendMessage(){
+
+    public void onSendMessage() {
         click(sendmessage);
     }
-    public void loginNow(){
+
+    public void clickOnNotNow() {
         click(notnow);
     }
+
+    public void onSwitchAccount() {
+        click(SwitchAccounts);
     }
+
+    public void onLogOut() {
+        click(LogOut);
+    }
+
+    public void onAddPost() {
+        click(AddPost);
+    }
+
+    public void onSelectFromComputer() {
+        click(SelectFromComputar);
+    }
+
+    public void OnChangePassword() {
+        click(Changepassword);
+    }
+
+    public void OnEditProfile() {
+        click(editprofile);
+    }
+
+    public void OnName() {
+        click(Name);
+    }
+}
 
 
 
