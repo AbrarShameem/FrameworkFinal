@@ -16,7 +16,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         System.out.println("Woooo!");
     }
 
-    @Test
+    //@Test
     public void MotorsOptions2() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -25,7 +25,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         Assert.assertEquals(getTitle(), title);
     }
 
-    @Test
+    //@Test
     public void MotorsOptions3() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -35,7 +35,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         System.out.println("Lets get it!");
     }
 
-    @Test
+    //@Test
     public void MotorsOptions4() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -44,7 +44,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         Assert.assertEquals(getTitle(), title);
     }
 
-    @Test
+    //@Test
     public void MotorsOptions5() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -52,7 +52,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         String title = getTitle();
         Assert.assertEquals(getTitle(), title);
     }
-    @Test
+    //@Test
     public void MotorsOptions6() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -61,7 +61,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         Assert.assertEquals(getTitle(), title);
     }
 
-    @Test
+    //@Test
     public void MotorsOptions7() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -71,7 +71,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         System.out.println("Go trailers!");
     }
 
-    @Test
+    //@Test
     public void MotorsOptions8() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
@@ -80,7 +80,7 @@ public class TestMotorsDropdownOptions extends CommonAPI {
         Assert.assertEquals(getTitle(), title);
     }
 
-    @Test
+    //@Test
     public void MotorsOptions9() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();
