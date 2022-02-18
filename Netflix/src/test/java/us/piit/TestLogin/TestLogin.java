@@ -1,13 +1,14 @@
-package us.piit;
+package us.piit.TestLogin;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
+import us.piit.HomePage;
 
 
 public class TestLogin extends CommonAPI{
 
-    HomePage home = new HomePage();
+    HomePage home = new HomePage(driver);
 
     @Test
     public void firstSignIn() {
@@ -16,14 +17,14 @@ public class TestLogin extends CommonAPI{
         waitFor(3);
     }
 
-  @Test
-   public void logInWithCredentials() {
-      HomePage home = PageFactory.initElements(driver, HomePage.class);
-      home.clickOnSignInButton();
-      waitFor(3);
-      home.signInNow();
-      waitFor(3);
-   }
+    @Test
+    public void logInWithCredentials() {
+        HomePage home = PageFactory.initElements(driver, HomePage.class);
+        home.clickOnSignInButton();
+        waitFor(3);
+        home.signInNow();
+        waitFor(3);
+    }
 
     @Test
     public void logInWithTsuki() {
@@ -76,87 +77,4 @@ public class TestLogin extends CommonAPI{
         home.signInNow();
         waitFor(3);
         home.mommyClick();
-    }
-
-
-//
-//    //@Test
-//    public void test3() {
-//        HomePage home = PageFactory.initElements(driver, HomePage.class);
-//        home.clickOnSignInButton();
-//        waitFor(3);
-//        home.signInNow();
-//        waitFor(3);
-//
-//
-//
-//        home.tsukiSignIn();
-//        waitFor(3);
-//    }
-//
-//    //@Test
-//    public void test4() {
-//        home.tsukiSignIn();
-//        waitFor(3);
-//        home.signOut();
-//        waitFor(3);
-//    }
-//
-//    //@Test
-//    public void test5() {
-//        home.leoSignIn();
-//        waitFor(3);
-//    }
-//
-//    //@Test
-//    public void test6() {
-//        home.leoSignIn();
-//        waitFor(3);
-//        home.signOut();
-//        waitFor(3);
-//
-//    //@Test
-//    public void test7() {
-//        home.mommySignIn();
-//        waitFor(3);
-//    }
-//
-//    //@Test
-//        public void test8() {
-//            home.mommySignIn();
-//            waitFor(3);
-//            home.signOut();
-//            waitFor(3);
-//        }
-//
-//    //@Test
-//        public void test9() {
-//            home.daddySignIn();
-//            waitFor(3);
-//        }
-//
-//    //@Test
-//    public void test10() {
-//        home.daddySignIn();
-//        waitFor(3);
-//        home.signOut();
-//        waitFor(3);
-//        }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//    }
-//
-
-
-
-}
+    }}
