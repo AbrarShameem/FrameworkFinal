@@ -2,6 +2,7 @@ package us.piit.TestLogin;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import us.piit.HomePage;
 
@@ -14,6 +15,7 @@ public class TestLogin extends CommonAPI{
     public void firstSignIn() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         click(home.signInButton);
+        Assert.assertEquals(getTitle(), "Sign In");
         waitFor(3);
     }
 
@@ -23,15 +25,17 @@ public class TestLogin extends CommonAPI{
         home.clickOnSignInButton();
         waitFor(3);
         home.signInNow();
-        waitFor(3);
+        Assert.assertEquals(getTitle(), "Home - Sign In");
     }
 
     @Test
     public void logInWithTsuki() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.clickOnSignInButton();
-        waitFor(3);
         home.signInNow();
+        String logInTitle = getTitle();
+        System.out.println(logInTitle);
+        Assert.assertEquals(getTitle(), "Home - Netflix");
         waitFor(3);
         home.tsukiClick();
 
@@ -45,6 +49,9 @@ public class TestLogin extends CommonAPI{
         home.signInNow();
         waitFor(3);
         home.leoClick();
+        String leoTitle = getTitle();
+        System.out.println(leoTitle);
+        Assert.assertEquals(getTitle(), "Home - Netflix");
 
     }
 
@@ -56,10 +63,14 @@ public class TestLogin extends CommonAPI{
         home.signInNow();
         waitFor(3);
         home.michaelClick();
+        String michaelTitle = getTitle();
+        System.out.println(michaelTitle);
+        Assert.assertEquals(getTitle(), "Home - Netflix");
+
 
     }
 
-    @Test
+   @Test
     public void logInWithDaddy() {
         HomePage home = PageFactory.initElements(driver, HomePage.class);
         home.clickOnSignInButton();
@@ -67,7 +78,11 @@ public class TestLogin extends CommonAPI{
         home.signInNow();
         waitFor(3);
         home.daddyClick();
-    }
+       String daddyTitle = getTitle();
+       System.out.println(daddyTitle);
+       Assert.assertEquals(getTitle(), "Home - Netflix");
+
+   }
 
     @Test
     public void logInWithMommy() {
@@ -76,5 +91,8 @@ public class TestLogin extends CommonAPI{
         waitFor(3);
         home.signInNow();
         waitFor(3);
-        home.mommyClick();
+        String mommyTitle = getTitle();
+        System.out.println(mommyTitle);
+        Assert.assertEquals(getTitle(), "Home - Netflix");
+
     }}
