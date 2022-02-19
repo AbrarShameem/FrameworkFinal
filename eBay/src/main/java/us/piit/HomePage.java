@@ -207,6 +207,3 @@ public class HomePage extends CommonAPI {
     }
 
 }
-
-
-
