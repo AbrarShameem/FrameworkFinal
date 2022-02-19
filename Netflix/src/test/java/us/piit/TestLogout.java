@@ -2,6 +2,7 @@ package us.piit;
 
 import base.CommonAPI;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestLogout extends CommonAPI {
@@ -13,6 +14,9 @@ public class TestLogout extends CommonAPI {
         homePage.clickOnSignInButton();
         homePage.signInNow();
         homePage.tsukiClick();
+        String daddyTitle = getTitle();
+        System.out.println(daddyTitle);
+        Assert.assertEquals(getTitle(), "Home - Netflix");
         tsukiProfile.CarrotHoverOver();
         tsukiProfile.clickOnSignOut();
     }
