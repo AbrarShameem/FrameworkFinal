@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class TestMotorsDropdownOptions extends CommonAPI {
 
-    @Test
+    //@Test
     public void MotorsOptions1() {
         HomePage homePage = new HomePage(driver);
         homePage.hoverMotorsLink();

@@ -170,6 +170,9 @@ public class CommonAPI {
     public void click(WebElement element){
         element.click();
     }
+    public void goBack(){
+        driver.navigate().back();
+    }
     public void clickById(WebElement element){
         element.click();
 

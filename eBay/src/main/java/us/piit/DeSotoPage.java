@@ -19,5 +19,8 @@ public class DeSotoPage extends CommonAPI {
     public String getDeSotoPageTitle(){
         return getTitle();
     }
+    public String getDeSotoPageUrl(){
+        return driver.getCurrentUrl();
+    }
 
 }

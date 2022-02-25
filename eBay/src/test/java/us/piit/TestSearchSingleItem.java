@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestSearchSingleItem extends CommonAPI {
 
 
-    @Test
+    //@Test
     public void searchNintendoDSI() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -15,7 +15,7 @@ public class TestSearchSingleItem extends CommonAPI {
         System.out.println(getTitle());
     }
 
-    @Test
+    //@Test
     public void searchChromeBook() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -24,7 +24,7 @@ public class TestSearchSingleItem extends CommonAPI {
         System.out.println("Test Passed!!");
     }
 
-    @Test
+    //@Test
     public void searchHolesBook() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -34,7 +34,7 @@ public class TestSearchSingleItem extends CommonAPI {
 
     }
 
-    @Test
+    //@Test
     public void searchMacBookPro() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -43,7 +43,7 @@ public class TestSearchSingleItem extends CommonAPI {
         System.out.println("Macbook search results are here");
     }
 
-    @Test
+    //@Test
     public void searchPolandSpringWater() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
