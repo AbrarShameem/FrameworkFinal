@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class TestSearchManyItems  extends CommonAPI {
 
-    @Test
+    //@Test
     public void testManyItems1() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -16,7 +16,7 @@ public class TestSearchManyItems  extends CommonAPI {
         System.out.println("Done!");
     }
 
-    @Test
+    //@Test
     public void testManyItems2() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -26,7 +26,7 @@ public class TestSearchManyItems  extends CommonAPI {
         System.out.println("Donezo!");
     }
 
-    @Test
+    //@Test
     public void testManyItems3() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -38,7 +38,7 @@ public class TestSearchManyItems  extends CommonAPI {
         System.out.println("Finito!");
     }
 
-    @Test
+    //@Test
     public void testManyItems4() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
@@ -49,7 +49,7 @@ public class TestSearchManyItems  extends CommonAPI {
         System.out.println("Khatam!");
     }
 
-    @Test
+    //@Test
     public void testManyItems5() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");

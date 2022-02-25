@@ -6,13 +6,14 @@ import org.testng.annotations.Test;
 
 public class TestDSotoResultsPage extends CommonAPI {
 
-    @Test
+    //@Test
     public void DeSotoResults(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);
         DeSotoPage deSotoPage = new DeSotoPage(driver);
         homePage.hoverMotorsLink();
         homePage.clickClassicsLink();
+        Assert.assertEquals(getTitle(), "Classics products for sale | eBay");
         classicsPage.clickDeSotoLink();
         deSotoPage.getDeSotoPageTitle();
         String dSotoUrl = driver.getCurrentUrl();
