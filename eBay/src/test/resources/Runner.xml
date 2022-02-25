@@ -12,7 +12,7 @@
 
     <test name="eBay test">
         <classes>
-            <class name="us.piit.TestClassics"></class>
+            <class name="us.piit.TestClothingAndAccessories"></class>
         </classes>
     </test>
 </suite>

@@ -26,14 +26,14 @@ public class ClothingAndAccessoriesPage extends CommonAPI {
 
     @FindBy (xpath = "//span[contains(text(),'Women')]")
     WebElement womenLink;
-    @FindBy (xpath = "//a[contains(text(),'Luxury Watches')]")
+    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[2]/ul[1]/li[1]/a[1]")
     WebElement luxaryWatchesLink;
     @FindBy (xpath = "//a[contains(text(),'Designer Handbags')]")
     WebElement designerHandbagsLink;
-    @FindBy (xpath = "//a[contains(text(),'Fine Jewelry')]")
+    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[2]/ul[1]/li[3]/a[1]")
     WebElement fineJewelryLink;
 
-    @FindBy (xpath = "//a[contains(text(),'Collectible Sneakers')]")
+    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[3]/ul[1]/li[1]/a[1]")
     WebElement collectibleSneakersLink;
     @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[3]/ul[1]/li[2]/a[1]")
     WebElement costumesLink;
