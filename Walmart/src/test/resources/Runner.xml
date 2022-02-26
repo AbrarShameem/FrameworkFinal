@@ -12,7 +12,8 @@
             <class name="us.piit.AppTest"></class>
             <class name="us.piit.SearchItemTest"></class>
             <class name="us.piit.SigninPageTest"></class>
-
+            <class name="us.piit.BabyAppliancesItemTest"></class>
+            <class name="us.piit.Bathroom_KitchenItemTest"></class>
         </classes>
     </test>
 </suite>
