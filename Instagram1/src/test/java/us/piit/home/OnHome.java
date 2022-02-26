@@ -9,7 +9,7 @@ import us.piit.ProfilePage;
 
 public class OnHome extends CommonAPI{
 
-    //@Test
+    @Test
     public void logginbutton() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -19,7 +19,7 @@ public class OnHome extends CommonAPI{
     }
 
 
-    //@Test
+    @Test
     public void Wrongusername() {
         HomePage home = new HomePage(driver);
         home.Wrongusername();
@@ -28,7 +28,7 @@ public class OnHome extends CommonAPI{
 
     }
 
-    //@Test
+    @Test
     public void Wrongpassword() {
         HomePage home = new HomePage(driver);
         home.Wrongpassword();
@@ -36,7 +36,7 @@ public class OnHome extends CommonAPI{
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void Clickonnotnow() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -45,7 +45,7 @@ public class OnHome extends CommonAPI{
         home.clickOnNotNow();Assert.assertEquals(getTitle(),"Instagram");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void Search() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -58,7 +58,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(7);
     }
-    //@Test
+    @Test
     public void Clickonprofile() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -68,7 +68,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(4);
     }
-    //@Test
+    @Test
     public void Profile() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -82,7 +82,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(4);
     }
-    //@Test
+    @Test
     public void Clickonsaved() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -96,7 +96,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(4);
     }
-    //@Test
+    @Test
     public void Clickonsetting() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -109,7 +109,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(4);
     }
-    //@Test
+    @Test
     public void Clickonpolygon() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -120,7 +120,7 @@ public class OnHome extends CommonAPI{
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void Clickonsendmessage() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -131,7 +131,7 @@ public class OnHome extends CommonAPI{
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void Clickonswitchaccount() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -144,7 +144,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(6);
     }
-    //@Test
+    @Test
     public void clickonlogout() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -157,7 +157,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(6);
     }
-    //@Test
+    @Test
     public void clickonaddpost() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -167,7 +167,7 @@ public class OnHome extends CommonAPI{
         Assert.assertEquals(getTitle(),"Create new post • Instagram");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void clcikonSelectfromcomputer() {
         HomePage home = new HomePage(driver);
         home.login();
@@ -181,14 +181,14 @@ public class OnHome extends CommonAPI{
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void clcikonloginnow() {
         HomePage home = new HomePage(driver);
         home.login();
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void clcikonposts() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -202,7 +202,7 @@ public class OnHome extends CommonAPI{
         waitFor(3);
     }
 
-    //@Test
+    @Test
     public void clcikonvideos() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -215,7 +215,7 @@ public class OnHome extends CommonAPI{
         profile.OnVideos();
         Assert.assertEquals(getTitle(),"Instagram");
         waitFor(4);}
-    //@Test
+    @Test
     public void clcikontagged() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
