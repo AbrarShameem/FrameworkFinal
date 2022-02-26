@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class BabyAppliancesItemTest extends CommonAPI {
 
 
-  //  @Test
+   @Test
     public void BabyAppliancesItemTest1() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -24,7 +24,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         System.out.println("hovers working!");
 
     }
-  //  @Test
+    @Test
     public void BabyAppliancesItemTest2() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -34,7 +34,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
 
 
     }
-    // @Test
+     @Test
     public void BabyAppliancesItemTest3() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -50,7 +50,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest4() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -66,7 +66,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest5() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -82,7 +82,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    // @Test
+     @Test
     public void BabyAppliancesItemTest6() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -98,7 +98,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-   // @Test
+    @Test
     public void BabyAppliancesItemTest7() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -114,7 +114,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest8() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -130,7 +130,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest9() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -146,7 +146,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest10() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);
@@ -163,7 +163,7 @@ public class BabyAppliancesItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BabyAppliancesItemTest11() {
         HomePage homePage = new HomePage(driver);
         BabyAppliancesItem babyAppliancesItem = new BabyAppliancesItem(driver);

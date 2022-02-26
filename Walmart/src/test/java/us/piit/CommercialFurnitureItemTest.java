@@ -13,7 +13,7 @@ import base.CommonAPI;
 
 public class CommercialFurnitureItemTest extends CommonAPI {
 
-    //  @Test
+    @Test
     public void CommercialFurnitureItemTest1() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -29,7 +29,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
 
     }
 
-    //  @Test
+     @Test
     public void CommercialFurnitureItemTest2() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -40,7 +40,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
 
     }
 
-    // @Test
+    @Test
     public void CommercialFurnitureItemTest3() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -57,7 +57,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest4() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -74,7 +74,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest5() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -91,7 +91,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    // @Test
+    @Test
     public void CommercialFurnitureItemTest6() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -108,7 +108,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    // @Test
+    @Test
     public void CommercialFurnitureItemTest7() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -125,7 +125,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest8() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -142,7 +142,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest9() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -159,7 +159,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest10() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);
@@ -177,7 +177,7 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
     }
 
-    //@Test
+    @Test
     public void CommercialFurnitureItemTest11() {
         HomePage homePage = new HomePage(driver);
         CommercialFurnitureItem commercialFurnitureItem = new CommercialFurnitureItem(driver);

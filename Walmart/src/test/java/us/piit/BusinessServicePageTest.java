@@ -10,7 +10,7 @@ import base.CommonAPI;
 
 public class BusinessServicePageTest extends CommonAPI {
 
-    //  @Test
+     @Test
     public void BusinessServicePageTest1() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -25,7 +25,7 @@ public class BusinessServicePageTest extends CommonAPI {
         System.out.println("hovers working!");
 
     }
-    //  @Test
+     @Test
     public void BusinessServicePageTest2() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -35,7 +35,7 @@ public class BusinessServicePageTest extends CommonAPI {
 
 
     }
-    // @Test
+     @Test
     public void BusinessServicePageTest3() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -51,7 +51,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest4() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -67,7 +67,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest5() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -83,7 +83,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    // @Test
+     @Test
     public void BusinessServicePageTest6() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -99,7 +99,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    // @Test
+     @Test
     public void BusinessServicePageTest7() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -115,7 +115,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest8() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -131,7 +131,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest9() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -147,7 +147,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest10() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
@@ -164,7 +164,7 @@ public class BusinessServicePageTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void BusinessServicePageTest11() {
         HomePage homePage = new HomePage(driver);
         BusinessServicePage businessServicePage = new BusinessServicePage(driver);
