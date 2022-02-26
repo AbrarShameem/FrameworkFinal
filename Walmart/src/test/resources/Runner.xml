@@ -14,6 +14,7 @@
             <class name="us.piit.SigninPageTest"></class>
             <class name="us.piit.BabyAppliancesItemTest"></class>
             <class name="us.piit.Bathroom_KitchenItemTest"></class>
+            <class name="us.piit.BusinessServicePageTest"></class>
         </classes>
     </test>
 </suite>

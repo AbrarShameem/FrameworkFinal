@@ -37,5 +37,37 @@ WebElement AdvertisingAgent;
 WebElement AssuranceServices;
 @FindBy (xpath = "//body/div[3]/div[1]/div[1]/div[1]/div[1]/div[2]/div[4]/a[1]")
 WebElement Auction;
+    public void clickBusinessService(){
+        click(BusinessService);
+    }
+    public void clickAllCategories(){
+        click(AllCategories);
+    }
+    public void clickAdvertising(){
+        click(Advertising);
+    }
+    public void clickInternetAdvertising(){
+        click(InternetAdvertising);
+    }
+
+
+    public void clickMagazineAdvertising(){
+        click(MagazineAdvertising);
+    }
+    public void clickOutdoorAdvertising(){
+        click(OutdoorAdvertising);
+    }
+    public void clickAgencyService(){
+        click(AgencyService);
+    }
+    public void clickAdvertisingAgent(){
+        click(AdvertisingAgent);
+    }
+    public void clickAssuranceServices(){
+        click(AssuranceServices);
+    }
+    public void clickAuction(){
+        click(Auction);
+    }
 
 }
