@@ -74,6 +74,8 @@ public class HomePage extends CommonAPI {
     WebElement Toprankingsuppliers;
     @FindBy(xpath = "//body/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/a[2]/div[1]/h4[1]/span[1]")
     WebElement ShoesStock;
+    @FindBy(xpath = "//span[contains(text(),'All Categories')]")
+    WebElement AllCategories;
 
     public void Search(String itemToSearch){
         typeAndEnter(Search, itemToSearch);
@@ -111,7 +113,8 @@ public class HomePage extends CommonAPI {
         click(SportsEntertainment);
     }
 
-    public void clickMachinery() { click(Machinery);}
+    public void clickMachinery() { click(Machinery);
+    }
 
     public void clickHomeGarden() {
         click(HomeGarden);
@@ -121,15 +124,18 @@ public class HomePage extends CommonAPI {
         click(WEEKLYDEALS);
     }
 
-    public void clickCONSUMERELECTRONICS(){click(CONSUMERELECTRONICS);}
+    public void clickCONSUMERELECTRONICS() {click(CONSUMERELECTRONICS);
+    }
 
     public void clickElectricCar2DoorSolarMiniCar() {
         click(ElectricCar2DoorSolarMiniCar);
     }
 
-    public void clickFoodWarmerHotpot(){click(FoodWarmerHotpot);}
+    public void clickFoodWarmerHotpot() {click(FoodWarmerHotpot);
+    }
 
-    public void clickSamsungTv85inch(){click(SamsungTv85inch);}
+    public void clickSamsungTv85inch(){click(SamsungTv85inch);
+    }
 
     public void clickMacbook() {
         click(Macbook);
@@ -143,20 +149,29 @@ public class HomePage extends CommonAPI {
 
     public void clickSignin() {click(Signin);}
 
-    public void clickReadytoShip() {click(ReadytoShip);}
+    public void clickReadytoShip() {click(ReadytoShip);
+    }
 
-    public void clickCategories() {click(Categories);}
+    public void clickCategories() {click(Categories);
+    }
 
-    public void clickSupplyRegions() {click(SupplyRegions);}
+    public void clickSupplyRegions() {click(SupplyRegions);
+    }
 
-    public void clickJoinFree() {click(JoinFree);}
+    public void clickJoinFree() {click(JoinFree);
+    }
 
-    public void clickGlobalOriginalSources() {click(GlobalOriginalSources);}
+    public void clickGlobalOriginalSources() {click(GlobalOriginalSources);
+    }
 
-    public void clickToprankingsuppliers() {click(Toprankingsuppliers);}
+    public void clickToprankingsuppliers() {click(Toprankingsuppliers);
+    }
 
-    public void clickShoesStock() {click(ShoesStock);}
-
+    public void clickShoesStock() {click(ShoesStock);
+    }
+    public void clickAllCategories(){
+        click(AllCategories);
+    }
 
 
 
