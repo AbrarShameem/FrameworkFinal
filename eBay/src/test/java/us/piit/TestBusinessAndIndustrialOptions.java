@@ -3,7 +3,7 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestBusinessAndIndustrial extends CommonAPI {
+public class TestBusinessAndIndustrialOptions extends CommonAPI {
 
     @Test
     public void businessIndustrialOptions1() {

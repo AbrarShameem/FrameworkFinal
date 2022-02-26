@@ -7,48 +7,53 @@ import org.testng.annotations.Test;
 public class TestSearchSingleItem extends CommonAPI {
 
 
-    //@Test
+    @Test
     public void searchNintendoDSI() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
         homePage.searchItem("Nintendo DSI");
+        waitFor(5);
         System.out.println(getTitle());
     }
 
-    //@Test
+    @Test
     public void searchChromeBook() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
         homePage.searchItem("Chromebook");
         System.out.println(getTitle());
+        waitFor(5);
         System.out.println("Test Passed!!");
     }
 
-    //@Test
+    @Test
     public void searchHolesBook() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
         homePage.searchItem("Holes book");
         System.out.println(getTitle());
+        waitFor(5);
         System.out.println("Wooooo!");
 
     }
 
-    //@Test
+    @Test
     public void searchMacBookPro() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
         homePage.searchItem("Macbook Pro");
         System.out.println(getTitle());
+        waitFor(5);
         System.out.println("Macbook search results are here");
     }
 
-    //@Test
+    @Test
     public void searchPolandSpringWater() {
         HomePage homePage = new HomePage(driver);
         Assert.assertEquals(getTitle(), "Electronics, Cars, Fashion, Collectibles & More | eBay");
         homePage.searchItem("Poland Spring Water");
         System.out.println(getTitle());
+        waitFor(5);
         System.out.println("Stay hydrated!");
 
     }

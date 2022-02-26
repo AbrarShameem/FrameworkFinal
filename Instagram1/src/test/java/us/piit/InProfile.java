@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class InProfile extends CommonAPI
 {
-    //@Test
+    @Test
     public void clickonfollowing() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -30,7 +30,7 @@ public class InProfile extends CommonAPI
         Assert.assertEquals(getTitle(),"@sellingsunset007 • Instagram photos and videos");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void Clickonmeta() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -44,7 +44,7 @@ public class InProfile extends CommonAPI
         waitFor(5);
 
     }
-    //@Test
+    @Test
     public void Clickonlocations() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -73,7 +73,7 @@ public class InProfile extends CommonAPI
         waitFor(5);}
 
 
-    // @Test
+     @Test
     public void Clickonabout() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -100,7 +100,7 @@ public class InProfile extends CommonAPI
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void onjobs() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -113,7 +113,7 @@ public class InProfile extends CommonAPI
         profile.OnJobs();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void onhelp() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -123,7 +123,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnHelp();
         waitFor(5);}
-    //@Test
+    @Test
     public void onAPI() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -133,7 +133,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnAPI();
         waitFor(5);}
-    //@Test
+    @Test
     public void oNPrivacy() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -143,7 +143,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnPrivacy();
         waitFor(5);}
-    //@Test
+    @Test
     public void onTerms() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -153,7 +153,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnTerms();
         waitFor(5);}
-    //@Test
+    @Test
     public void onTopaccounts() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -163,7 +163,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnTopaccounts();
         waitFor(5);}
-    //@Test
+    @Test
     public void onHashtags() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -173,7 +173,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnHashtags();
         waitFor(5);}
-    //@Test
+    @Test
     public void OnInstagramlite() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -183,7 +183,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnInstagramlite();
         waitFor(5);}
-    //@Test
+    @Test
     public void onEnglish() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -193,7 +193,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnEnglish();
         waitFor(5);}
-    //@Test
+    @Test
     public void onInstagramfrommeta() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);

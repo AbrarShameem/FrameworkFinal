@@ -4,9 +4,9 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestCareers extends CommonAPI {
+public class TestCareersPathways extends CommonAPI {
 
-    //@Test
+    @Test
     public void careerTest1() {
         HomePage homePage = new HomePage(driver);
         CareersPage careersPage = new CareersPage(driver);
@@ -27,7 +27,7 @@ public class TestCareers extends CommonAPI {
         homePage.clickCareersLink();
         Assert.assertEquals(getTitle(), "Find Your Dream Job - eBay Inc. Careers");
     }
-    //@Test
+    @Test
     public void careerTest2() {
         HomePage homePage = new HomePage(driver);
         CareersPage careersPage = new CareersPage(driver);
@@ -48,7 +48,7 @@ public class TestCareers extends CommonAPI {
         homePage.clickCareersLink();
         Assert.assertEquals(getTitle(), "Find Your Dream Job - eBay Inc. Careers");
     }
-    //@Test
+    @Test
     public void careerTest3() {
         HomePage homePage = new HomePage(driver);
         CareersPage careersPage = new CareersPage(driver);
@@ -69,7 +69,7 @@ public class TestCareers extends CommonAPI {
         homePage.clickCareersLink();
         Assert.assertEquals(getTitle(), "Find Your Dream Job - eBay Inc. Careers");
     }
-    //@Test
+    @Test
     public void careerTest4() {
         HomePage homePage = new HomePage(driver);
         CareersPage careersPage = new CareersPage(driver);
@@ -90,7 +90,7 @@ public class TestCareers extends CommonAPI {
         homePage.clickCareersLink();
         Assert.assertEquals(getTitle(), "Find Your Dream Job - eBay Inc. Careers");
     }
-    //@Test
+    @Test
     public void careerTest5() {
         HomePage homePage = new HomePage(driver);
         CareersPage careersPage = new CareersPage(driver);

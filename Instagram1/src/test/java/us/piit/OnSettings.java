@@ -15,7 +15,7 @@ import us.piit.HomePage;
 
 public class OnSettings extends CommonAPI {
 
-    //@Test
+    @Test
     public void Changepassword() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -35,7 +35,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void Clickoneidtorofile() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -54,7 +54,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void clickoname() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -77,7 +77,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);
 
     }
-    //@Test
+    @Test
     public void clickonusername() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -100,7 +100,7 @@ public class OnSettings extends CommonAPI {
     }
 
 
-    //@Test
+    @Test
     public void clickonwebsite() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -122,7 +122,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void clickonbio() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -145,7 +145,7 @@ public class OnSettings extends CommonAPI {
 
     }
 
-    //@Test
+    @Test
     public void clickonemailaddress() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -167,7 +167,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void clickonphonenumber() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -189,7 +189,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);
     }
 
-    //@Test
+    @Test
     public void clickongender() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -210,7 +210,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);
     }
-   // @Test
+    @Test
     public void clcikongender() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -231,7 +231,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);
     }
-    //@Test
+    @Test
     public void clickonsimilaraccount() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -251,7 +251,7 @@ public class OnSettings extends CommonAPI {
         settings.OnSimilaraccountsuggestions();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void clickonchangepicture() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -272,7 +272,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickonappsandwebsites() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -293,7 +293,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickonemailandsms() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -314,7 +314,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickonnotifications() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -334,7 +334,7 @@ public class OnSettings extends CommonAPI {
         settings.OnPushnotifications();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void clickonmanagecontacts() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -355,7 +355,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickonprivacyandsecurity() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -375,7 +375,7 @@ public class OnSettings extends CommonAPI {
         settings.OnPrivacyandsecurity();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void clickonloginactivity() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -395,7 +395,7 @@ public class OnSettings extends CommonAPI {
         settings.OnLoginactivity();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void clcikonOnEmailsfrominstagram() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -415,7 +415,7 @@ public class OnSettings extends CommonAPI {
         settings.OnEmailsfrominstagram();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
-    //@Test
+    @Test
     public void clickprivacyandsecurityhelp() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -436,7 +436,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickOnHelp() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -457,7 +457,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickOnsupportrequests() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -478,7 +478,7 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
 
-    //@Test
+    @Test
     public void clickonhelpcenter() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
@@ -500,7 +500,7 @@ public class OnSettings extends CommonAPI {
         waitFor(5);}
 
 
-    //@Test
+    @Test
     public void clickOnSwitchtoprofessionalaccount() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);

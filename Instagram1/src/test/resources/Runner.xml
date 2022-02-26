@@ -11,7 +11,7 @@
             <class name ="us.piit.InProfile"></class>
 
             <!---<class name="us.piit.InProfile"></class>-->
-            <!---<class name="us.piit.OnSettings"></class>-->
+            <class name="us.piit.OnSettings"></class>
       </classes>
       </test>
 </suite>
