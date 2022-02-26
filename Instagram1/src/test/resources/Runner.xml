@@ -8,11 +8,10 @@
 
     <test name="instagram test">
         <classes>
+            <class name ="us.piit.InProfile"></class>
 
-            <class name ="us.piit.AppTest"></class>
-
-                </class>
-
-        </classes>
-        </test>
+            <!---<class name="us.piit.InProfile"></class>-->
+            <!---<class name="us.piit.OnSettings"></class>-->
+      </classes>
+      </test>
 </suite>

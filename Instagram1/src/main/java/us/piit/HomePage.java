@@ -23,8 +23,8 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//body[1]/div[1]/section[1]/main[1]/div[1]/div[1]/div[1]/div[1]/button[1]")
     WebElement notnow;
 
-    @FindBy(xpath = "//a[contains(text(),'Edit Profile')]")
-    WebElement editprofile;
+    @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[6]/span[1]/img[1]")
+    WebElement Profile;
 
     @FindBy(xpath = "//body[1]/div[1]")
     WebElement InstagramLogo;
@@ -34,12 +34,6 @@ public class HomePage extends CommonAPI {
 
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/main[1]/article[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/label[1]/input[1]")
     WebElement password;
-
-    @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[6]/span[1]/img[1]")
-    WebElement Profile;
-
-    @FindBy(xpath = "//div[contains(text(),'Profile')]")
-    WebElement onProfile;
 
     @FindBy(xpath = "//*[text()='Saved']")
     WebElement saved;
@@ -52,9 +46,6 @@ public class HomePage extends CommonAPI {
 
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[2]/a[1]/*[1]")
     WebElement sendmessage;
-
-    @FindBy(xpath = "//header/section[1]/ul[1]/li[3]/a[1]/div[1]")
-    WebElement following;
 
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[2]/input[1]")
     WebElement Search;
@@ -71,20 +62,6 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//button[contains(text(),'Select from computer')]")
     WebElement SelectFromComputar;
 
-    @FindBy(xpath = "//a[contains(text(),'Change Password')]")
-    WebElement Changepassword;
-
-    @FindBy(xpath = "//body[1]/div[1]/section[1]/main[1]/div[1]/article[1]/form[1]/div[1]/aside[1]/label[1]")
-    WebElement Name;
-
-
-    public void onFollowing() {
-        click(following);
-    }
-
-    public void OnSaved() {
-        click(saved);
-    }
 
     public void login() {
         type(email, "tubaf64096@gmail.com");
@@ -111,17 +88,12 @@ public class HomePage extends CommonAPI {
         Search.sendKeys(Keys.ENTER);
     }
 
+    public void onSettings() {
+        click(settings);
+    }
 
     public void profilemain() {
         click(Profile);
-    }
-
-    public void secondProfile() {
-        click(onProfile);
-    }
-
-    public void onSettings() {
-        click(settings);
     }
 
     public void onPolygon() {
@@ -151,20 +123,10 @@ public class HomePage extends CommonAPI {
     public void onSelectFromComputer() {
         click(SelectFromComputar);
     }
-
-    public void OnChangePassword() {
-        click(Changepassword);
-    }
-
-    public void OnEditProfile() {
-        click(editprofile);
-    }
-
-    public void OnName() {
-        click(Name);
-    }
 }
 
-//gggggggg
+
+
+
 
 
