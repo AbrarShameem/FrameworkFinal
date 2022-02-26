@@ -4,7 +4,7 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestClassics extends CommonAPI {
+public class TestClassicsCarModels extends CommonAPI {
 
     @Test
     public void classics1(){
@@ -28,7 +28,7 @@ public class TestClassics extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("buttons working");
     }
-    //@Test
+    @Test
     public void classics2(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);
@@ -51,7 +51,7 @@ public class TestClassics extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("buttons working");
     }
-    //@Test
+    @Test
     public void classics3(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);
@@ -75,7 +75,7 @@ public class TestClassics extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("buttons working");
     }
-    //@Test
+    @Test
     public void classics4(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);
@@ -107,7 +107,7 @@ public class TestClassics extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("success");
     }
-    //@Test
+    @Test
     public void classics5(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);

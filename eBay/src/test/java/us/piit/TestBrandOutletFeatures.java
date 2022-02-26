@@ -4,9 +4,9 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TestBrandOutlet extends CommonAPI {
+public class TestBrandOutletFeatures extends CommonAPI {
 
-    //@Test
+    @Test
     public void brandOutletUses1(){
         HomePage homePage = new HomePage(driver);
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
@@ -26,7 +26,7 @@ public class TestBrandOutlet extends CommonAPI {
         System.out.println("Brand Outlet products for sale | eBay");
         System.out.println("https://www.ebay.com/b/Brand-Outlet/bn_7115532402");
     }
-    //@Test
+    @Test
     public void brandOutletUses2(){
         HomePage homePage = new HomePage(driver);
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
@@ -50,7 +50,7 @@ public class TestBrandOutlet extends CommonAPI {
         System.out.println("Brand Outlet products for sale | eBay");
         System.out.println("https://www.ebay.com/b/Brand-Outlet/bn_7115532402");
     }
-    //@Test
+    @Test
     public void brandOutletUses3(){
         HomePage homePage = new HomePage(driver);
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);

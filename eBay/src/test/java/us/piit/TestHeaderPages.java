@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestHeaderPages extends CommonAPI {
 
 
-    //@Test
+    @Test
     public void headerPages1() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -23,7 +23,7 @@ public class TestHeaderPages extends CommonAPI {
         homePage.clickElectronicsLink();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
     }
-    //@Test
+    @Test
     public void headerPages2() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -41,7 +41,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed");
     }
-    //@Test
+    @Test
     public void headerPages3() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -61,7 +61,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed once more");
     }
-    //@Test
+    @Test
     public void headerPages4() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -84,7 +84,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed once more");
     }
-    //@Test
+    @Test
     public void headerPages5() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -113,7 +113,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed once more");
     }
-    //@Test
+    @Test
     public void headerPages6() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -129,7 +129,7 @@ public class TestHeaderPages extends CommonAPI {
         homePage.clickElectronicsLink();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
     }
-    //@Test
+    @Test
     public void headerPages7() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -147,7 +147,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed");
     }
-    //@Test
+    @Test
     public void headerPages8() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -167,7 +167,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed once more");
     }
-    //@Test
+    @Test
     public void headerPages9() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);
@@ -190,7 +190,7 @@ public class TestHeaderPages extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Electronics/bn_7000259124");
         System.out.println("Passed once more");
     }
-    //@Test
+    @Test
     public void headerPages10() {
         HomePage homePage = new HomePage(driver);
         ElectronicsPage electronicsPage = new ElectronicsPage(driver);

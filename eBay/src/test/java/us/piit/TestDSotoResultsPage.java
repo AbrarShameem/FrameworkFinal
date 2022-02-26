@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class TestDSotoResultsPage extends CommonAPI {
 
-    //@Test
+    @Test
     public void DeSotoResults(){
         HomePage homePage = new HomePage(driver);
         ClassicsPage classicsPage = new ClassicsPage(driver);

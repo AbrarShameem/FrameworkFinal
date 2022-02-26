@@ -147,7 +147,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnPrivacy();
         waitFor(5);}
-    //@Test
+    @Test
     public void onTerms() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -157,7 +157,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnTerms();
         waitFor(5);}
-    //@Test
+    @Test
     public void onTopaccounts() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -167,7 +167,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnTopaccounts();
         waitFor(5);}
-    //@Test
+    @Test
     public void onHashtags() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -177,7 +177,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnHashtags();
         waitFor(5);}
-    //@Test
+    @Test
     public void OnInstagramlite() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -187,7 +187,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnInstagramlite();
         waitFor(5);}
-    //@Test
+    @Test
     public void onEnglish() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
@@ -197,7 +197,7 @@ public class InProfile extends CommonAPI
         waitFor(6);
         profile.OnEnglish();
         waitFor(5);}
-    //@Test
+    @Test
     public void onInstagramfrommeta() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
