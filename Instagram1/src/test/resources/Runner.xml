@@ -6,9 +6,9 @@
     <parameter name="browserName" value="chrome"/>
     <parameter name="url" value="https://www.instagram.com/"></parameter>
 
-    <test name="instagram test">
+    <test name="instagram test">                                                   
         <classes>
-            <class name ="us.piit.InProfile"></class>
+            <class name ="us.piit.home.OnHome"></class>
 
             <!---<class name="us.piit.InProfile"></class>-->
             <class name="us.piit.OnSettings"></class>

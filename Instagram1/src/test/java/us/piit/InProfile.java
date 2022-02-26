@@ -35,13 +35,17 @@ public class InProfile extends CommonAPI
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
-        home.profilemain();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(6);
-        profile.OnMeta();Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
+      //  Assert.assertEquals(getTitle(),"Instagram");
+       // waitFor(5);
+       // home.profilemain();
+       // Assert.assertEquals(getTitle(),"Instagram");
+       // waitFor(6);
+      //  profile.secondProfile();
+       // Assert.assertEquals(getTitle(),"Instagram");
+        //waitFor(4);
+       // profile.OnMeta();
+       // Assert.assertEquals(getTitle(),"Instagram");
+       // waitFor(5);
 
     }
     @Test
@@ -73,7 +77,7 @@ public class InProfile extends CommonAPI
         waitFor(5);}
 
 
-     @Test
+    @Test
     public void Clickonabout() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);

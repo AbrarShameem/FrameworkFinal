@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Bathroom_KitchenItemTest extends CommonAPI {
-   // @Test
+   @Test
     public void Bath_kitchenTest1() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -22,7 +22,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest2() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -38,7 +38,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest3() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -55,7 +55,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-   // @Test
+    @Test
     public void Bath_kitchenTest4() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -71,7 +71,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-
+    @Test
     public void Bath_kitchenTest5() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -87,7 +87,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest6() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -104,7 +104,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest7() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -121,7 +121,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest8() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);
@@ -140,7 +140,7 @@ public class Bathroom_KitchenItemTest extends CommonAPI {
         homePage.clickAllCategories();
         Assert.assertEquals(getTitle(), "");
     }
-    //@Test
+    @Test
     public void Bath_kitchenTest9() {
         HomePage homePage = new HomePage(driver);
         Bathroom_KitchenItem bathroomKitchenItem = new Bathroom_KitchenItem(driver);

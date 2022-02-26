@@ -210,7 +210,8 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);
     }
-    @Test
+
+   @Test
     public void clcikongender() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
