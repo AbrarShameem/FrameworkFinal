@@ -29,7 +29,7 @@ public class HelpAndContactPage extends CommonAPI {
     @FindBy (xpath = "//h2[contains(text(),'Reset your password')]")
     WebElement resetPasswordLinkLink;
 
-    public void clickFeaturedDropdown(){
+    public void searchThis(){
         typeAndEnter(searchbarEbayHelp, "how do i delete my account?");
     }
     public void clickBuyingAsGuestLink(){
@@ -40,9 +40,6 @@ public class HelpAndContactPage extends CommonAPI {
     }
     public void clickHackedAccountHelp(){
         click(hackedAccountHelpLink);
-    }
-    public void clickBuyingAsGuest(){
-        click(buyingAsGuestLink);
     }
     public void clickBuyingAsGuestHelp(){
         click(buyingAsGuestHelpLink);

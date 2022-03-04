@@ -74,8 +74,6 @@ public EbayRefurbishedPage(WebDriver driver) {
         public void clickportableAudioAndHeadphonesLink(){
                 click(portableAudioAndHeadphonesLink);
                 }
-        public void clicktabletsLink(){
-                click(tabletsLink);
-                }
+        public void clicktabletsLink(){ click(tabletsLink);}
 
 }

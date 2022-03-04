@@ -29,9 +29,7 @@ public class DailyDealsPage extends CommonAPI {
     @FindBy (xpath = "//span[contains(text(),'Sales & Events')]")
     WebElement salesAndEventsDropdown;
 
-    public void clickFeaturedDropdown(){
-        click(featuredDropdown);
-    }
+    public void clickFeaturedDropdown(){click(featuredDropdown);}
     public void clickTechDropdown(){
         click(techDropdown);
     }
