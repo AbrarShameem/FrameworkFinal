@@ -44,40 +44,31 @@ public class HomeAndGardenPage extends CommonAPI {
         @FindBy(xpath = "//span[contains(text(),'Wine')]")
         WebElement wineLink;
 
-        public void clickbabyGearLink() {
-            click(babyGearLink);
+        public void clickbabyGearLink() {click(babyGearLink);
         }
 
-        public void clickbathLink() {
-            click(bathLink);
+        public void clickbathLink() {click(bathLink);
         }
 
-        public void clickbeddingLink() {
-            click(beddingLink);
+        public void clickbeddingLink() {click(beddingLink);
         }
 
-        public void clickcraftsLink() {
-            click(craftsLink);
+        public void clickcraftsLink() {click(craftsLink);
         }
 
-        public void clickfoodAndBeveragesLink() {
-            click(foodAndBeveragesLink);
+        public void clickfoodAndBeveragesLink() {click(foodAndBeveragesLink);
         }
 
-        public void clickfurnitureLink() {
-            click(furnitureLink);
+        public void clickfurnitureLink() {click(furnitureLink);
         }
 
-        public void clickhomeDecorLink() {
-            click(homeDecorLink);
+        public void clickhomeDecorLink() {click(homeDecorLink);
         }
 
-        public void clickhomeImprovementLink() {
-            click(homeImprovementLink);
+        public void clickhomeImprovementLink() {click(homeImprovementLink);
         }
 
-        public void clickhousekeepingAndOrganizationLink() {
-            click(housekeepingAndOrganizationLink);
+        public void clickhousekeepingAndOrganizationLink() {click(housekeepingAndOrganizationLink);
         }
 
         public void clickmajorAppliancesLink() {

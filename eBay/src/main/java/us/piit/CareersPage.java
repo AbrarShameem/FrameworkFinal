@@ -27,14 +27,10 @@ public class CareersPage extends CommonAPI {
     WebElement jobsByLocationLink;
     @FindBy (xpath = "//header/nav[1]/div[1]/ul[1]/li[4]/a[1]")
     WebElement engineeringCareersLink;
-    @FindBy (xpath = "//header/nav[1]/div[1]/ul[1]/li[6]/a[1]")
-    WebElement ourBenefitsLink;
     @FindBy (xpath = "//header/nav[1]/div[1]/ul[1]/li[8]/a[1]")
     WebElement ourJobsLink;
     @FindBy (xpath = "//a[contains(text(),'View Open Positions')]")
     WebElement viewOpenPositionsLink;
-    @FindBy (xpath = "//span[contains(text(),'Get Started')]")
-    WebElement getStartedLink;
     @FindBy (xpath = "//body[1]/header[1]/div[1]/div[1]/div[2]/div[2]/div[2]/span[2]/a[1]")
     WebElement pressRoomLink;
     @FindBy (xpath = "//body[1]/header[1]/div[1]/div[1]/div[2]/div[2]/div[2]/span[4]/a[1]")
@@ -64,16 +60,10 @@ public class CareersPage extends CommonAPI {
     public void clickengineeringCareersLink(){
         click(engineeringCareersLink);
     }
-    public void clickourBenefits(){
-        click(ourBenefitsLink);
-    }
     public void clickourJobsLink(){
         click(ourJobsLink);
     }
     public void clickviewOpenPositionsLink(){
             click(viewOpenPositionsLink);
         }
-    public void clickGetStartedLink(){
-        click(getStartedLink);
-    }
 }

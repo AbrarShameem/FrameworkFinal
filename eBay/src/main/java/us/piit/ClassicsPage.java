@@ -13,7 +13,7 @@ public class ClassicsPage extends CommonAPI {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[1]/ul[1]/li[3]/a[1]")
+    @FindBy (xpath = "//a[contains(text(),'DeSoto')]")
     WebElement DeSotoLink;
     @FindBy (xpath = "//a[contains(text(),'AMC')]")
     WebElement amcLink;
