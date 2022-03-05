@@ -382,7 +382,6 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(), "Edit Profile • Instagram");
         waitFor(5);
     }
-
     @Test
     public void clickOnsupportrequests() {
         HomePage home = new HomePage(driver);
@@ -404,7 +403,6 @@ public class OnSettings extends CommonAPI {
         Assert.assertEquals(getTitle(), "Edit Profile • Instagram");
         waitFor(5);
     }
-
 
 
     @Test
