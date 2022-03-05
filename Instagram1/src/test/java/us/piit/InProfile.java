@@ -35,17 +35,16 @@ public class InProfile extends CommonAPI
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
-      //  Assert.assertEquals(getTitle(),"Instagram");
-       // waitFor(5);
-       // home.profilemain();
-       // Assert.assertEquals(getTitle(),"Instagram");
-       // waitFor(6);
-      //  profile.secondProfile();
-       // Assert.assertEquals(getTitle(),"Instagram");
-        //waitFor(4);
-       // profile.OnMeta();
-       // Assert.assertEquals(getTitle(),"Instagram");
-       // waitFor(5);
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(5);
+        home.profilemain();
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(6);
+        profile.secondProfile();
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(4);
+        profile.OnMeta();
+        waitFor(2);
 
     }
     @Test
@@ -54,13 +53,12 @@ public class InProfile extends CommonAPI
         ProfilePage profile =new ProfilePage(driver);
         home.login();
         Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
         home.profilemain();
         Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(6);
+        profile.secondProfile();
+        Assert.assertEquals(getTitle(),"Instagram");
         profile.OnLocations();
-        Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
-        waitFor(5);}
+    }
 
     @Test
     public void ClickonUnitedstates() {
@@ -68,10 +66,10 @@ public class InProfile extends CommonAPI
         ProfilePage profile =new ProfilePage(driver);
         home.login();
         Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
         home.profilemain();
         Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(6);
+        profile.secondProfile();
+        Assert.assertEquals(getTitle(),"Instagram");
         profile.OnUnitedstates();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
         waitFor(5);}
@@ -80,32 +78,30 @@ public class InProfile extends CommonAPI
     @Test
     public void Clickonabout() {
         HomePage home = new HomePage(driver);
-        ProfilePage profile =new ProfilePage(driver);
+        ProfilePage profile = new ProfilePage(driver);
         home.login();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
+        Assert.assertEquals(getTitle(), "Instagram");
         home.profilemain();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(6);
+        Assert.assertEquals(getTitle(), "Instagram");
+        profile.secondProfile();
+        Assert.assertEquals(getTitle(), "Instagram");
         profile.OnAbout();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);}
-    @Test
-    public void Clickonblog() {
+    }
+   @Test
+    public void Onblog() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
-        Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(5);
+        Assert.assertEquals(getTitle(), "Instagram");
         home.profilemain();
+        profile.secondProfile();
         Assert.assertEquals(getTitle(),"Instagram");
-        waitFor(6);
         profile.OnBlog();
         Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
-        waitFor(5);}
+        }
 
     @Test
-    public void onjobs() {
+    public void Onjobs() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
@@ -124,9 +120,7 @@ public class InProfile extends CommonAPI
         home.login();
         waitFor(5);
         home.profilemain();
-        waitFor(6);
-        profile.OnHelp();
-        waitFor(5);}
+        profile.OnHelp();}
     @Test
     public void onAPI() {
         HomePage home = new HomePage(driver);
@@ -172,21 +166,18 @@ public class InProfile extends CommonAPI
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
-        waitFor(5);
         home.profilemain();
-        waitFor(6);
-        profile.OnHashtags();
-        waitFor(5);}
+        profile.OnHashtags();}
+
     @Test
     public void OnInstagramlite() {
         HomePage home = new HomePage(driver);
         ProfilePage profile =new ProfilePage(driver);
         home.login();
-        waitFor(5);
         home.profilemain();
-        waitFor(6);
         profile.OnInstagramlite();
-        waitFor(5);}
+        }
+
     @Test
     public void onEnglish() {
         HomePage home = new HomePage(driver);

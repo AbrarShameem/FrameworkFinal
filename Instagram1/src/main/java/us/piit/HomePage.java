@@ -26,9 +26,6 @@ public class HomePage extends CommonAPI {
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/nav[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[6]/span[1]/img[1]")
     WebElement Profile;
 
-    @FindBy(xpath = "//body[1]/div[1]")
-    WebElement InstagramLogo;
-
     @FindBy(xpath = "//body/div[@id='react-root']/section[1]/main[1]/article[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[1]/div[1]/label[1]/input[1]")
     WebElement email;
 
