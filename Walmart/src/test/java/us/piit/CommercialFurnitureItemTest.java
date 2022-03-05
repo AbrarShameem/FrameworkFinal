@@ -48,13 +48,12 @@ public class CommercialFurnitureItemTest extends CommonAPI {
         Assert.assertEquals(getTitle(), "");
         commercialFurnitureItem.clickFurniture();
         goBack();
-        waitFor(3);
         driver.navigate().to("https://www.alibaba.com/");
         homePage.clickAllCategories();
         driver.navigate().to("https://www.alibaba.com/");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.alibaba.com/");
         homePage.clickAllCategories();
-        Assert.assertEquals(getTitle(), "");
+        Assert.assertEquals(getTitle(), "https://www.alibaba.com/");
     }
 
     @Test
