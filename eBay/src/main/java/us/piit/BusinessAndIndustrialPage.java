@@ -20,7 +20,7 @@ public class BusinessAndIndustrialPage extends CommonAPI{
     @FindBy (xpath = "//span[contains(text(),'CNC, Metalworking & Manufacturing')]")
     WebElement cncMetalWorkingLink;
 
-    @FindBy (xpath = "//span[contains(text(),'Electrical Equipment & Supplies')]")
+    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[1]/ul[1]/li[5]/button[1]/span[1]")
     WebElement electricalEquipmentSuppliesLink;
     @FindBy (xpath = "//span[contains(text(),'Facility Maintenance & Safety')]")
     WebElement facilityMaintenanceLink;

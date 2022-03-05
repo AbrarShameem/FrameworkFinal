@@ -19,7 +19,7 @@ public class CareersPage extends CommonAPI {
     WebElement careerSearchBar;
     @FindBy (xpath = "//header/nav[1]/div[1]/ul[1]/li[3]/a[1]")
     WebElement jobsByCategoryLink;
-    @FindBy (xpath = "//body[1]/header[1]/nav[1]/div[1]/ul[1]/li[5]/a[1]")
+    @FindBy (xpath = "//header/nav[1]/div[1]/ul[1]/li[5]/a[1]")
     WebElement studentsRecentGradsLink;
     @FindBy (xpath = "//body[1]/header[1]/nav[1]/div[1]/ul[1]/li[7]/a[1]")
     WebElement howWeHireLink;

@@ -129,8 +129,7 @@ public class HomePage extends CommonAPI {
         click(sellerCenterLink);
     }
     public void hoverMotorsLink() {
-        hoverOver(driver, motorsLink);
-    }
+        hoverOver(driver, motorsLink);}
     public void clickMotorsLink() {
         click(motorsLink);
     }
