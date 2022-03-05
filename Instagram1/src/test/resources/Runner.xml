@@ -14,7 +14,7 @@
             <class name="us.piit.Helps"></class>
             <class name="us.piit.PolicyCase"></class>
             <class name="us.piit.home.OnHome"></class>
-          
+
       </classes>
       </test>
 </suite>
