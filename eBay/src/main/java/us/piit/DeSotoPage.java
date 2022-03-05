@@ -16,8 +16,7 @@ public class DeSotoPage extends CommonAPI {
     @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[1]/ul[1]/li[3]/a[1]")
     WebElement AcuraLink;
 
-    public String getDeSotoPageTitle(){
-        return getTitle();
-    }
+    public String getDeSotoPageTitle(){ return getTitle();}
+    public String getDeSotoPageUrl(){ return driver.getCurrentUrl();}
 
 }

@@ -8,8 +8,8 @@
 
     <test name="instagram test">                                                   
         <classes>
-
-            <class name ="us.piit.OnSettings"></class>git
+          
+            <class name ="us.piit.OnSettings"></class>
             <class name="us.piit.InProfile"></class>
             <class name="us.piit.Helps"></class>
             <class name="us.piit.PolicyCase"></class>

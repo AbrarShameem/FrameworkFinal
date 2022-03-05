@@ -12,7 +12,26 @@
 
     <test name="eBay test">
         <classes>
+
+            <class name="us.piit.TestBrandOutletFeatures"></class>
+            <class name="us.piit.TestBusinessAndIndustrialOptions"></class>
+            <class name="us.piit.TestCareersPathways"></class>
+            <class name="us.piit.TestClothingAndAccessories"></class>
+            <class name="us.piit.TestDSotoResultsPage"></class>
+            <class name="us.piit.TestHeaderPages"></class>
             <class name="us.piit.TestMotorsDropdownOptions"></class>
+            <class name="us.piit.TestSearchManyItems"></class>
+            <class name="us.piit.TestSearchSingleItem"></class>
+            <class name="us.piit.TestCollectiblesAndArtOffers"></class>
+            <class name="us.piit.TestDailyDeals"></class>
+            <class name="us.piit.TestDevelopersHub"></class>
+            <class name="us.piit.TestRefurbishedItems"></class>
+            <class name="us.piit.TestHelpContactOptions"></class>
+            <class name="us.piit.TestHomeGardeningFeatures"></class>
+            <class name="us.piit.TestJewelryWatchesTypes"></class>
+            <class name="us.piit.TestSellerCenterInformationals"></class>
+            <class name="us.piit.TestSportingGoodsWear"></class>
+
         </classes>
     </test>
 </suite>

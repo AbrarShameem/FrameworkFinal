@@ -177,6 +177,7 @@ public class InProfile extends CommonAPI
         home.profilemain();
         profile.OnInstagramlite();
         }
+
     @Test
     public void onEnglish() {
         HomePage home = new HomePage(driver);

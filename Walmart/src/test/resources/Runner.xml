@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Walmart Automation" parallel="false">
+    <parameter name="useCloudEnv" value="false"></parameter>
+    <parameter name="cloudEnvName" value="browserstack"></parameter>
+    <parameter name="os" value="mac"></parameter>
+    <parameter name="os_version" value="Sierra"></parameter>
     <parameter name="os" value="mac"></parameter>
     <parameter name="browserName" value="chrome"></parameter>
     <parameter name="url" value="https://www.alibaba.com/"></parameter>
@@ -12,7 +16,13 @@
             <class name="us.piit.AppTest"></class>
             <class name="us.piit.SearchItemTest"></class>
             <class name="us.piit.SigninPageTest"></class>
-
+            <class name="us.piit.BabyAppliancesItemTest"></class>
+            <class name="us.piit.Bathroom_KitchenItemTest"></class>
+            <class name="us.piit.BusinessServicePageTest"></class>
+            <class name="us.piit.Construction_RealStateItemTest"></class>
+            <class name="us.piit.FurnitureItemTest"></class>
+            <class name="us.piit.Home_ApplianceItemTest"></class>
+            <class name="us.piit.Lights_LightingItemTest"></class>
         </classes>
     </test>
 </suite>

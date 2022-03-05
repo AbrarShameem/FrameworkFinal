@@ -162,7 +162,29 @@ public class OnSettings extends CommonAPI {
     public void clickongender() {
         HomePage home = new HomePage(driver);
         SettingPage settings = new SettingPage(driver);
-        ProfilePage profile = new ProfilePage(driver);
+        ProfilePage profile =new ProfilePage(driver);
+        home.login();
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(5);
+        home.profilemain();
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(5);
+        home.onSettings();
+        Assert.assertEquals(getTitle(),"Instagram");
+        waitFor(4);
+        settings.OnEditProfile();
+        Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
+        waitFor(5);
+        settings.OnGender();
+        Assert.assertEquals(getTitle(),"Edit Profile • Instagram");
+        waitFor(5);
+    }
+
+   @Test
+    public void clcikongender() {
+        HomePage home = new HomePage(driver);
+        SettingPage settings = new SettingPage(driver);
+        ProfilePage profile =new ProfilePage(driver);
         home.login();
         Assert.assertEquals(getTitle(), "Instagram");
         waitFor(5);
