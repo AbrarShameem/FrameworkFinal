@@ -14,29 +14,29 @@ public class SellerCenterPage extends CommonAPI {
         super.driver = driver;
         PageFactory.initElements(driver, this);
     }
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[2]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_getStarted_button']")
     WebElement getStartedLink;
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[3]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_listingAndMarketing_button']")
     WebElement listingAndMarketingLink;
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[4]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_runYourStore_button']")
     WebElement runYourStoreLink;
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[5]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_shipping_button']")
     WebElement shippingLink;
 
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[6]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_serviceAndPayments_button']")
     WebElement serviceAndPaymentsLink;
-    @FindBy (xpath = "//body[1]/div[3]/div[1]/div[1]/nav[1]/div[1]/ul[1]/li[7]/a[1]")
+    @FindBy (xpath = "//a[@id='sellercenter_m02_start_selling_button']")
     WebElement startSellingLink;
-    @FindBy (xpath = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/a[1]")
+    @FindBy (xpath = "//a[@id='m22_tb_a1__1']")
     WebElement gettingStartedLink;
-    @FindBy (xpath = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[2]/a[1]")
+    @FindBy (xpath = "//a[@id='m22_tb_a1__2']")
     WebElement feesAndFeaturesLink;
 
-    @FindBy (xpath = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[3]/a[1]")
+    @FindBy (xpath = "//a[@id='m22_tb_a1__3']")
     WebElement shipTheWayYouWantLink;
-    @FindBy (xpath = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[4]/a[1]")
+    @FindBy (xpath = "//a[@id='m22_tb_a1__4']")
     WebElement whatToSellLink;
-    @FindBy (xpath = "//body[1]/div[4]/div[1]/div[1]/div[1]/div[6]/div[1]/div[1]/div[1]/div[1]/ul[1]/li[5]/a[1]")
+    @FindBy (xpath = "//a[@id='m22_tb_a1__5']")
     WebElement simpleToGetPaidLink;
     @FindBy (xpath = "//a[contains(text(),'Expand all')]")
     WebElement expandAllLink;
@@ -49,9 +49,6 @@ public class SellerCenterPage extends CommonAPI {
     public void clicklistingAndMarketingLink(){
         click(listingAndMarketingLink);
     }
-    public void clickrunYourStoreLink(){
-        click(runYourStoreLink);
-    }
     public void clickshippingLink(){
         click(shippingLink);
     }
@@ -61,9 +58,7 @@ public class SellerCenterPage extends CommonAPI {
     public void clickstartSellingLink(){
         click(startSellingLink);
     }
-    public void clickgettingStartedLink(){
-        click(gettingStartedLink);
-    }
+    public void clickgettingStartedLink(){click(gettingStartedLink);}
     public void clickfeesAndFeaturesLink(){
         click(feesAndFeaturesLink);
     }

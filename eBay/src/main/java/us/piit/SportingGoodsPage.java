@@ -21,7 +21,7 @@ public class SportingGoodsPage extends CommonAPI {
     WebElement electricBikesLink;
     @FindBy (xpath = "//a[contains(text(),'Camping & Hiking Equipment')]")
     WebElement campingHikingEquipmentLink;
-    @FindBy (xpath = "//a[contains(text(),'Hunting Equipment')]")
+    @FindBy (xpath = "//body[1]/div[5]/div[3]/div[1]/div[1]/div[1]/div[1]/section[1]/ul[1]/li[4]/a[1]")
     WebElement huntingEquipmentLink;
 
     @FindBy (xpath = "//span[contains(text(),'Boxing, Martial Arts & MMA')]")

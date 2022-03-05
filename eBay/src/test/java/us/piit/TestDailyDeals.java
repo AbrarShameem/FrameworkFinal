@@ -3,6 +3,8 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestDailyDeals extends CommonAPI {
 
     @Test

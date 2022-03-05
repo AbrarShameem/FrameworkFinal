@@ -25,7 +25,7 @@ public class SellPage extends CommonAPI {
     WebElement faqLink;
     @FindBy (xpath = "//body/div[2]/div[1]/div[1]/div[2]/nav[1]/ul[1]/li[5]/a[1]")
     WebElement myEbayLink;
-    @FindBy (xpath = "//body/div[2]/div[2]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/a[1]")
+    @FindBy (xpath = "//body[1]/div[2]/div[2]/main[1]/div[1]/div[1]/section[1]/div[1]/div[1]/a[1]")
     WebElement listAnItemLink;
 
     public void clicktheBasicsLink(){
@@ -40,7 +40,6 @@ public class SellPage extends CommonAPI {
     public void clickfaqLink(){
         click(faqLink);
     }
-
     public void clickmyEbayLink(){
         click(myEbayLink);
     }

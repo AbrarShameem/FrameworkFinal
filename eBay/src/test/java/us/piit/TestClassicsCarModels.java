@@ -4,6 +4,8 @@ import base.CommonAPI;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestClassicsCarModels extends CommonAPI {
 
     @Test
@@ -13,14 +15,14 @@ public class TestClassicsCarModels extends CommonAPI {
         SellerCenterPage sellerCenterPage = new SellerCenterPage(driver);
         SellPage sellPage = new SellPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("pages functional");
         classicsPage.clickAmcLink();
         Assert.assertEquals(getTitle(), "AMC Cars and Trucks for sale | eBay");
-        goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        goBack();driver.navigate().to("https://www.ebay.com/");driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -35,7 +37,7 @@ public class TestClassicsCarModels extends CommonAPI {
         SellerCenterPage sellerCenterPage = new SellerCenterPage(driver);
         SellPage sellPage = new SellPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("pages functional");
@@ -43,7 +45,7 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickAmcLink();
         Assert.assertEquals(getTitle(), "AMC Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -58,7 +60,7 @@ public class TestClassicsCarModels extends CommonAPI {
         SellerCenterPage sellerCenterPage = new SellerCenterPage(driver);
         SellPage sellPage = new SellPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("clicks functional");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -67,7 +69,7 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickAmcLink();
         Assert.assertEquals(getTitle(), "AMC Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -82,7 +84,7 @@ public class TestClassicsCarModels extends CommonAPI {
         SellerCenterPage sellerCenterPage = new SellerCenterPage(driver);
         SellPage sellPage = new SellPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -91,7 +93,7 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickAmcLink();
         Assert.assertEquals(getTitle(), "AMC Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -99,7 +101,7 @@ public class TestClassicsCarModels extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -114,7 +116,7 @@ public class TestClassicsCarModels extends CommonAPI {
         CollectiblesAndArtPage collectiblesAndArtPage = new CollectiblesAndArtPage(driver);
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -123,7 +125,7 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickAmcLink();
         Assert.assertEquals(getTitle(), "AMC Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -131,7 +133,7 @@ public class TestClassicsCarModels extends CommonAPI {
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/AMC-Cars-and-Trucks/6001/bn_24016985");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickAmcLink();
         classicsPage.clickauctionLink();goBack();
@@ -146,7 +148,7 @@ public class TestClassicsCarModels extends CommonAPI {
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         DailyDealsPage dailyDealsPage = new DailyDealsPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -155,14 +157,14 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickCordLink();
         Assert.assertEquals(getTitle(), "Cord Cars & Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickEdselLink();
         classicsPage.clickbuyNowLink();goBack();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickHudsonLink();
         classicsPage.clickbuyNowLink();goBack();
@@ -177,7 +179,7 @@ public class TestClassicsCarModels extends CommonAPI {
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         DailyDealsPage dailyDealsPage = new DailyDealsPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -186,14 +188,14 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickMercuryLink();
         Assert.assertEquals(getTitle(), "Mercury Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickMgLink();
         classicsPage.clickbuyNowLink();goBack();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/MG-Cars-and-Trucks/6001/bn_24017609");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickNashLink();
         classicsPage.clickbuyNowLink();goBack();
@@ -208,7 +210,7 @@ public class TestClassicsCarModels extends CommonAPI {
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         DailyDealsPage dailyDealsPage = new DailyDealsPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -217,14 +219,14 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickOldsmobileLink();
         Assert.assertEquals(getTitle(), "Oldsmobile Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickPackardLink();
         classicsPage.clickbuyNowLink();goBack();goBack();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickPlymouthLink();
         classicsPage.clickbuyNowLink();goBack();
@@ -239,7 +241,7 @@ public class TestClassicsCarModels extends CommonAPI {
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         DailyDealsPage dailyDealsPage = new DailyDealsPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -248,14 +250,14 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickPontiacLink();
         Assert.assertEquals(getTitle(), "Pontiac Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickPackardLink();
         classicsPage.clickbuyNowLink();goBack();goBack();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickPlymouthLink();
         classicsPage.clickbuyNowLink();goBack();
@@ -270,7 +272,7 @@ public class TestClassicsCarModels extends CommonAPI {
         BrandOutletPage brandOutletPage = new BrandOutletPage(driver);
         DailyDealsPage dailyDealsPage = new DailyDealsPage(driver);
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         System.out.println("so far so good");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
@@ -279,14 +281,14 @@ public class TestClassicsCarModels extends CommonAPI {
         classicsPage.clickOldsmobileLink();
         Assert.assertEquals(getTitle(), "Oldsmobile Cars and Trucks for sale | eBay");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickPackardLink();
         classicsPage.clickbuyNowLink();goBack();goBack();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.ebay.com/b/Classics/bn_7005623268");
         System.out.println("buttons working");
         goBack();driver.navigate().to("https://www.ebay.com/");
-        homePage.hoverMotorsLink();
+        homePage.hoverMotorsLink();driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
         homePage.clickClassicsLink();
         classicsPage.clickWillysLink();
         classicsPage.clickbuyNowLink();goBack();

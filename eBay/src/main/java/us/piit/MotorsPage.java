@@ -45,26 +45,19 @@ public class MotorsPage extends CommonAPI {
     @FindBy(xpath = "//a[contains(text(),'Wheels, Tires & Parts')]")
     WebElement wheelsTiresAndPartsLink;
 
-    public void clickallPartsAccessoriesLink(){
-        click(allPartsAccessoriesLink);
+    public void clickallPartsAccessoriesLink(){click(allPartsAccessoriesLink);
     }
-    public void clickapparelProtectiveGearLink(){
-        click(apparelProtectiveGearLink);
+    public void clickapparelProtectiveGearLink(){click(apparelProtectiveGearLink);
     }
-    public void clickatvUtvPartsLink(){
-        click(atvUtvPartsLink);
+    public void clickatvUtvPartsLink(){click(atvUtvPartsLink);
     }
-    public void clickautomotiveToolsSuppliesLink(){
-        click(automotiveToolsSuppliesLink);
+    public void clickautomotiveToolsSuppliesLink(){click(automotiveToolsSuppliesLink);
     }
-    public void clickboatPartsLink(){
-        click(boatPartsLink);
+    public void clickboatPartsLink(){click(boatPartsLink);
     }
-    public void clickcarTruckPartsLink(){
-        click(carTruckPartsLink);
+    public void clickcarTruckPartsLink(){click(carTruckPartsLink);
     }
-    public void clickcommercialTruckPartsLink(){
-        click(commercialTruckPartsLink);
+    public void clickcommercialTruckPartsLink(){click(commercialTruckPartsLink);
     }
     public void clickinCarGPSSecurityLink(){
         click(inCarGPSSecurityLink);
